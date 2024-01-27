@@ -1,0 +1,9 @@
+[submodule "stock-service"]
+	path = stock-service
+	url = git@github.com:OlehTsipotan/Kafka-Stock-Service.git
+[submodule "order-service"]
+	path = order-service
+	url = git@github.com:OlehTsipotan/Kafka-Order-Service.git
+[submodule "payment-service"]
+	path = payment-service
+	url = git@github.com:OlehTsipotan/Kafka-Payment-Service.git
