@@ -6,7 +6,7 @@
 ----
 
 This is a basic example of a microservice architecture using Spring Boot, Spring Kafka (Avro), and Docker. 
-The project consists of three microservices: Order Service, Payment Service, and Stock Service. 
+The project comprises three microservices: Order Service, Payment Service, and Stock Service. 
 All microservices are independent of each other and communicate with each other using Apache Kafka.
 
 ## Table of Contents
@@ -16,17 +16,24 @@ All microservices are independent of each other and communicate with each other 
 - [Credits](#credits)
 
 ## Project Description
-The Spring Kafka Order System is designed to provide a flexible and robust API for creating orders and processing their payments, stock. 
+The Spring Kafka Order System is designed to provide a flexible and robust API for creating orders and processing their payments, and stock. 
 Despite all the simplicity of the project, it is designed to be easily scalable and extensible. 
 The project is based on the microservice architecture and uses the Apache Kafka message broker and Apache Avro Schema Registry to communicate between microservices. The project is containerized using Docker and can be easily deployed to any cloud platform.
-And one of the main intentions of this project is to show how to use Apache Kafka with Avro serialization in Spring Boot applications.
+One of the main intentions of this project is to show how to use Apache Kafka with Avro serialization in Spring Boot applications.
+
+----
+### How it works ( Kafka Schema )
+***Numbers indicates order***
+  
+![Shema](https://raw.githubusercontent.com/OlehTsipotan/Spring-Kafka-Order-System/main/Kafka-Schema.png)
+
 
 ## Technology Stack
 
 - **Backend**:
     - [Java](https://www.java.com/) - A general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible.
     - [Spring Framework](https://spring.io/) - An application framework and inversion of control container for the Java platform.
-        - [Spring Boot](https://spring.io/projects/spring-boot) - An extension of the Spring framework that simplifies the process of building production-ready applications.
+        - [Spring Boot](https://spring.io/projects/spring-boot) - An extension of the Spring framework that simplifies building production-ready applications.
         - [Spring Web](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html) - Provides key web-related features, including multipart file upload functionality and initialization of the IoC container.
         - [Spring Data JPA](https://spring.io/projects/spring-data-jpa) - Provides a simple and consistent programming model for data access.
         - [Spring MVC](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html) - The web module of the Spring framework that simplifies the work needed to develop web applications.
@@ -37,7 +44,7 @@ And one of the main intentions of this project is to show how to use Apache Kafk
     - [Apache Avro](https://avro.apache.org/) - A data serialization system.
 
 - **Testing**:
-    - [Mockito](https://site.mockito.org/) - Mockito is a mocking framework that tastes really good.
+    - [Mockito](https://site.mockito.org/) - Mockito is a mocking framework that tastes good.
     - [JUnit 5](https://junit.org/junit5/) - A programming and testing model for Java applications.
     - [Testcontainers](https://www.testcontainers.org/) - Provides throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.
     - [Flyway](https://flywaydb.org/) - Database migration tool.
