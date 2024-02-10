@@ -99,6 +99,9 @@ services:
     environment:
         KAFKA_BOOTSTRAP_SERVERS: broker:9092
         SCHEMA_REGISTRY_URL: http://schema-registry:8081
+        SPRING_DATASOURCE_PASSWORD: mypassword
+        SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/paymentdb
+        SPRING_DATASOURCE_USERNAME: myuser
 
   stock-service:
     container_name: stock-service
@@ -115,6 +118,9 @@ services:
     environment:
       KAFKA_BOOTSTRAP_SERVERS: broker:9092
       SCHEMA_REGISTRY_URL: http://schema-registry:8081
+      SPRING_DATASOURCE_PASSWORD: mypassword
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/stockdb
+      SPRING_DATASOURCE_USERNAME: myuser
 
 
 
